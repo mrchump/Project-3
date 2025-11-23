@@ -25,5 +25,11 @@ disk_client: disk_client.c
 random_client: random_client.c
 	$(CC) $(CFLAGS) -o random_client.exe random_client.c
 
+File_system_server: File_system_server.c
+	$(CC) $(CFLAGS) -o File_system_server.exe File_system_server.c
+
+fs_client: fs_client.c
+	$(CC) $(CFLAGS) -o fs_client.exe fs_client.c
+
 clean:
-	rm -f p1_server p1_client p2_server p2_client Basic_disk_storage_system.exe disk_client.exe random_client.exe
+	rm -f p1_server p1_client p2_server p2_client Basic_disk_storage_system.exe disk_client.exe random_client.exe File_system_server.exe fs_client.exe
